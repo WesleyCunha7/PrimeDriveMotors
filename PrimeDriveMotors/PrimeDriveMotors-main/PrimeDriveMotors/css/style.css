@@ -1,0 +1,183 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* BODY */
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color:#111;
+    color:white;
+}
+
+/* NAVBAR */
+
+header{
+    background:#000;
+    padding:20px 40px;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav h1{
+    font-size:24px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-size:16px;
+}
+
+nav a:hover{
+    color:#e10600;
+}
+
+/* FEATURED SECTION */
+
+.featured{
+    padding:60px;
+}
+
+.featured h2{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+/* GRID */
+
+.car-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+/* CAR CARD */
+
+.car-card{
+    background:#1c1c1c;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.car-card img{
+    width:100%;
+    height:350px;
+    object-fit:contain;
+}
+
+.car-card:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+}
+
+/* PRICE */
+
+.car-card p{
+    color:#e10600;
+    font-weight:bold;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#000;
+    margin-top:50px;
+}
+
+/* LOGO */
+
+.logo img{
+    height: 100px;
+}
+
+/* CAR GRID */
+
+.car-grid{
+    display:grid;
+    justify-content: center;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+/* CAR CARD */
+
+.car-card{
+    
+    background: #1c1c1c;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    position: relative;
+}
+
+/* CAR IMAGE */
+
+.car-card img{
+    width: 400px;
+    border-radius:8px;
+    transition: 0.3s;
+}
+
+/* PRICE */
+
+.price{
+    color:#e10600;
+    font-weight:bold;
+    margin-top: 5px 0;
+}
+
+/* MORE BUTTON */
+
+.more-btn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    background:#e10600;
+    border:none;
+    color:white;
+    font-size:16px;
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    cursor:pointer;
+    margin-top:10px;
+    transition:0.3s;
+}
+
+.more-btn:hover{
+    background: white;
+    color: #e10600;
+}
+
+/* HOVER EFFECT */
+
+.car-card:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+}
+
+/* HOVER ANIMATION */
+
+.car-card:hover img{
+transform:scale(1.1);
+}
