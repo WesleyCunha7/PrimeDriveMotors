@@ -1,0 +1,587 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* BODY */
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color:#111;
+    color:white;
+}
+
+/* NAVBAR */
+
+header{
+    background:#000;
+    padding:20px 40px;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav h1{
+    font-size:24px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-size:16px;
+}
+
+nav a:hover{
+    color:#e10600;
+}
+
+/* FEATURED SECTION */
+
+.featured{
+    padding:60px;
+}
+
+.featured h2{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+/* GRID */
+
+.car-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+/* CAR CARD */
+
+.car-card{
+    background:#1c1c1c;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.car-card img{
+    width:100%;
+    height:350px;
+    object-fit:contain;
+}
+
+.car-card:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+}
+
+/* PRICE */
+
+.car-card p{
+    color:#e10600;
+    font-weight:bold;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#000;
+    margin-top:50px;
+}
+
+/* LOGO */
+
+.logo img{
+    height: 100px;
+}
+
+/* CAR GRID */
+
+.car-grid{
+    display:grid;
+    justify-content: center;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+/* CAR CARD */
+
+.car-card{
+    
+    background: #1c1c1c;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    position: relative;
+}
+
+/* CAR IMAGE */
+
+.car-card img{
+    width: 400px;
+    border-radius:8px;
+    transition: 0.3s;
+}
+
+/* PRICE */
+
+.price{
+    color:#e10600;
+    font-weight:bold;
+    margin-top: 5px 0;
+}
+
+/* MORE BUTTON */
+
+.more-btn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    background:#e10600;
+    border:none;
+    color:white;
+    font-size:16px;
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    cursor:pointer;
+    margin-top:10px;
+    transition:0.3s;
+}
+
+.more-btn:hover{
+    background: white;
+    color: #e10600;
+}
+
+/* HOVER EFFECT */
+
+.car-card:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+}
+
+/* HOVER ANIMATION */
+
+.car-card:hover img{
+transform:scale(1.1);
+}
+
+/* HERO SECTION */
+
+.hero{
+    height: 60vh;
+    background: url('../images/hero.png') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h2{
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p{
+    margin-bottom: 20px;
+}
+
+.hero-btn{
+    background:#e10600;
+    color:white;
+    padding: 10px 20px;
+    text-decoration:none;
+    font-size:18px;
+    border-radius:5px;
+    transition:0.3s;
+    display: inline-block;
+}
+
+/* WHY CHOOSE SECTION */
+
+.why{
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.why h2{
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.why-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.why-grid div{
+    background: #1c1c1c;
+    padding: 30px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.why-grid div:hover{
+    transform: scale(-5px);
+    box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+.why-grid h3{
+    margin-bottom: 20px;
+    color: #e10600;
+}
+
+.why-grid p{
+    font-size: 14px;
+    color: #ccc;
+}
+/* ABOUT SECTION */
+
+.about-preview{
+    padding:80px 40px;
+    text-align: center;
+    max-width: 800px;
+    margin:  auto;
+}
+
+.about-preview h2{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about-preview p{
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.about-preview a:hover{
+    background-color: #b80000;
+}
+
+/* STOCK PAGE */
+
+.stock{
+    padding:80px 40px;
+    text-align:center;
+}
+
+.stock h2{
+    font-size:32px;
+    margin-bottom:50px;
+}
+
+/* GRID DOS CARROS */
+
+.stock .car-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(280px,1fr));
+    gap:40px;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* CARD */
+
+.stock .car-card{
+    background:#1c1c1c;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+    transition:0.3s;
+    position:relative;
+}
+
+/* IMAGEM */
+
+.stock .car-card img{
+    width:100%;
+    height:220px;
+    object-fit:contain;
+    transition:0.3s;
+}
+
+/* CAR NAME */
+
+.stock .car-card h3{
+    margin-top:15px;
+    font-size:18px;
+}
+
+/* PRICE */
+
+.stock .price{
+    color:#e10600;
+    font-weight:bold;
+    margin:10px 0;
+}
+
+/* STOCK PAGE */
+
+.stock{
+    padding:80px 40px;
+    text-align:center;
+}
+
+.stock h2{
+    font-size:32px;
+    margin-bottom:50px;
+}
+
+/* CARS GRID */
+
+.stock .car-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(400px,1fr));
+    gap:50px;
+    max-width:1500px;
+    margin:auto;
+}
+
+/* STOCK IMAGE */
+
+.stock .car-card img{
+    width:100%;
+    height:350px;
+    object-fit:contain;
+    transition:0.3s;
+}
+
+/* CAR NAME */
+
+.stock .car-card h3{
+    margin-top:15px;
+    font-size:18px;
+}
+
+/* PRICE */
+
+.stock .price{
+    color:#e10600;
+    font-weight:bold;
+    margin:10px 0;
+}
+
+/* BUTTON */
+
+.stock .hero-btn{
+    display:inline-block;
+    background:#e10600;
+    color:white;
+    padding:8px 18px;
+    border-radius:5px;
+    text-decoration:none;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.stock .hero-btn:hover{
+    background:#b80000;
+}
+
+/* HOVER */
+
+.stock .car-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.7);
+}
+
+.stock .car-card:hover img{
+    transform:scale(1.05);
+}
+
+/* IMAGE */
+
+.stock .car-card{
+    background:#1c1c1c;
+    padding:30px;
+    border-radius:10px;
+    text-align:center;
+    transition:0.3s;
+}
+
+/* ABOUT GRID */
+
+.about-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit, minmax(300px,1fr));
+gap:40px;
+margin-top:60px;
+}
+
+/* ABOUT BOX */
+
+.about-box{
+background:#1c1c1c;
+padding:30px;
+border-radius:10px;
+text-align:center;
+transition:0.3s;
+}
+
+.about-box:hover{
+transform:translateY(-5px);
+box-shadow:0 10px 25px rgba(0,0,0,0.6);
+}
+
+.about-box h3{
+color:#e10600;
+margin-bottom:15px;
+}
+
+.about-box p{
+color:#ccc;
+font-size:14px;
+}
+
+.brands{
+margin-top:70px;
+text-align:center;
+}
+
+.brands h3{
+font-size:24px;
+margin-bottom:15px;
+color:#e10600;
+}
+
+.brands p{
+color:#ccc;
+max-width:700px;
+margin:auto;
+}
+
+.about-page img{
+width:100%;
+max-width:900px;
+margin:40px auto;
+display:block;
+border-radius:10px;
+}
+
+.about-quote{
+margin-top:50px;
+font-style:italic;
+color:#888;
+}
+
+.about-page h2{
+font-size:36px;
+margin-top:40px;
+margin-bottom:20px;
+text-align:center;
+}
+
+.about-page p{
+max-width:800px;
+margin:0 auto 20px auto;
+text-align:center;
+color:#ccc;
+line-height:1.7;
+}
+
+.about-page{
+padding:100px 40px;
+max-width:1200px;
+margin:auto;
+}
+
+.about-page h2::after{
+content:"";
+display:block;
+width:80px;
+height:3px;
+background:#e10600;
+margin:15px auto;
+}
+
+/* CONTACT PAGE */
+
+.contact{
+padding:100px 40px;
+text-align:center;
+max-width:700px;
+margin:auto;
+}
+
+.contact h2{
+font-size:36px;
+margin-bottom:20px;
+}
+
+.contact p{
+color:#ccc;
+margin-bottom:40px;
+}
+
+.contact form{
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.contact input,
+.contact select,
+.contact textarea{
+padding:12px;
+border:none;
+border-radius:5px;
+background:#1c1c1c;
+color:white;
+font-family:'Poppins', sans-serif;
+}
+
+.contact textarea{
+height:120px;
+resize:none;
+}
+
+.contact button{
+background:#e10600;
+color:white;
+border:none;
+padding:12px;
+border-radius:5px;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.contact button:hover{
+background:#b80000;
+}
+
+.section-title{
+text-align:center;
+font-size:36px;
+margin-bottom:20px;
+}
+
+.section-title::after{
+content:"";
+display:block;
+width:80px;
+height:3px;
+background:#e10600;
+margin:15px auto;
+}
