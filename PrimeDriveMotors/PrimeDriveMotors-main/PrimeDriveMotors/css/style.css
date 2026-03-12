@@ -279,5 +279,309 @@ transform:scale(1.1);
     background-color: #b80000;
 }
 
+/* STOCK PAGE */
 
+.stock{
+    padding:80px 40px;
+    text-align:center;
+}
 
+.stock h2{
+    font-size:32px;
+    margin-bottom:50px;
+}
+
+/* GRID DOS CARROS */
+
+.stock .car-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(280px,1fr));
+    gap:40px;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* CARD */
+
+.stock .car-card{
+    background:#1c1c1c;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+    transition:0.3s;
+    position:relative;
+}
+
+/* IMAGEM */
+
+.stock .car-card img{
+    width:100%;
+    height:220px;
+    object-fit:contain;
+    transition:0.3s;
+}
+
+/* CAR NAME */
+
+.stock .car-card h3{
+    margin-top:15px;
+    font-size:18px;
+}
+
+/* PRICE */
+
+.stock .price{
+    color:#e10600;
+    font-weight:bold;
+    margin:10px 0;
+}
+
+/* STOCK PAGE */
+
+.stock{
+    padding:80px 40px;
+    text-align:center;
+}
+
+.stock h2{
+    font-size:32px;
+    margin-bottom:50px;
+}
+
+/* CARS GRID */
+
+.stock .car-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(400px,1fr));
+    gap:50px;
+    max-width:1500px;
+    margin:auto;
+}
+
+/* STOCK IMAGE */
+
+.stock .car-card img{
+    width:100%;
+    height:350px;
+    object-fit:contain;
+    transition:0.3s;
+}
+
+/* CAR NAME */
+
+.stock .car-card h3{
+    margin-top:15px;
+    font-size:18px;
+}
+
+/* PRICE */
+
+.stock .price{
+    color:#e10600;
+    font-weight:bold;
+    margin:10px 0;
+}
+
+/* BUTTON */
+
+.stock .hero-btn{
+    display:inline-block;
+    background:#e10600;
+    color:white;
+    padding:8px 18px;
+    border-radius:5px;
+    text-decoration:none;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.stock .hero-btn:hover{
+    background:#b80000;
+}
+
+/* HOVER */
+
+.stock .car-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.7);
+}
+
+.stock .car-card:hover img{
+    transform:scale(1.05);
+}
+
+/* IMAGE */
+
+.stock .car-card{
+    background:#1c1c1c;
+    padding:30px;
+    border-radius:10px;
+    text-align:center;
+    transition:0.3s;
+}
+
+/* ABOUT GRID */
+
+.about-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit, minmax(300px,1fr));
+gap:40px;
+margin-top:60px;
+}
+
+/* ABOUT BOX */
+
+.about-box{
+background:#1c1c1c;
+padding:30px;
+border-radius:10px;
+text-align:center;
+transition:0.3s;
+}
+
+.about-box:hover{
+transform:translateY(-5px);
+box-shadow:0 10px 25px rgba(0,0,0,0.6);
+}
+
+.about-box h3{
+color:#e10600;
+margin-bottom:15px;
+}
+
+.about-box p{
+color:#ccc;
+font-size:14px;
+}
+
+.brands{
+margin-top:70px;
+text-align:center;
+}
+
+.brands h3{
+font-size:24px;
+margin-bottom:15px;
+color:#e10600;
+}
+
+.brands p{
+color:#ccc;
+max-width:700px;
+margin:auto;
+}
+
+.about-page img{
+width:100%;
+max-width:900px;
+margin:40px auto;
+display:block;
+border-radius:10px;
+}
+
+.about-quote{
+margin-top:50px;
+font-style:italic;
+color:#888;
+}
+
+.about-page h2{
+font-size:36px;
+margin-top:40px;
+margin-bottom:20px;
+text-align:center;
+}
+
+.about-page p{
+max-width:800px;
+margin:0 auto 20px auto;
+text-align:center;
+color:#ccc;
+line-height:1.7;
+}
+
+.about-page{
+padding:100px 40px;
+max-width:1200px;
+margin:auto;
+}
+
+.about-page h2::after{
+content:"";
+display:block;
+width:80px;
+height:3px;
+background:#e10600;
+margin:15px auto;
+}
+
+/* CONTACT PAGE */
+
+.contact{
+padding:100px 40px;
+text-align:center;
+max-width:700px;
+margin:auto;
+}
+
+.contact h2{
+font-size:36px;
+margin-bottom:20px;
+}
+
+.contact p{
+color:#ccc;
+margin-bottom:40px;
+}
+
+.contact form{
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.contact input,
+.contact select,
+.contact textarea{
+padding:12px;
+border:none;
+border-radius:5px;
+background:#1c1c1c;
+color:white;
+font-family:'Poppins', sans-serif;
+}
+
+.contact textarea{
+height:120px;
+resize:none;
+}
+
+.contact button{
+background:#e10600;
+color:white;
+border:none;
+padding:12px;
+border-radius:5px;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.contact button:hover{
+background:#b80000;
+}
+
+.section-title{
+text-align:center;
+font-size:36px;
+margin-bottom:20px;
+}
+
+.section-title::after{
+content:"";
+display:block;
+width:80px;
+height:3px;
+background:#e10600;
+margin:15px auto;
+}
